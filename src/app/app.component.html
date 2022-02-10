@@ -1,1 +1,44 @@
-<button (click)="demo('hello' , 'sss')">Click Me</button>
+<!--<h1>Login Here.......</h1>-->
+
+<!--<input type="text"-->
+<!--       #box-->
+<!--       name="name" />-->
+
+<!--<button (click)="getValue(box.value)"> Click Here</button>-->
+
+<!--<p>-->
+<!--  And the value is : {{showValue}}-->
+<!--</p>-->
+
+
+<!--<button (click)="counter('min')">&#45;&#45;</button>-->
+<!--<p>Count : {{count}}</p>-->
+<!--<button (click)="counter('add')">++</button>-->
+
+
+<!--<input type="text" name="user-name" value="{{name}}" disabled ={{disable}}>-->
+<!--<br />-->
+<!--<br />-->
+<!--<input type="text" name="user-name" [value]="name" [disabled]=disable>-->
+
+
+<!--<h1 *ngIf="show== 'bhavdip'; then ifBlock else elseBlock"></h1>-->
+
+<!--<ng-template #ifBlock>-->
+<!--  <h1>If Condition</h1>-->
+<!--</ng-template>-->
+<!--<ng-template #elseBlock>-->
+<!--    <h1>-->
+<!--      Else Condition-->
+<!--    </h1>-->
+<!--</ng-template>-->
+
+<ng-template [ngIf]="color === 'red'">
+  <h1>Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'green'">
+  <h1>Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'blue'">
+  <h1>Blue Color</h1>
+</ng-template>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bhavdip';
+  // showValue='';
+  // getValue(val) {
+  //     this.showValue = val;
+  // }
+  // count = 0;
+  //
+  // counter(type) {
+  //   type === 'add' ? this.count++ : this.count--;
+  // }
 
-  demo(name:any , second:any) {
-    alert("Bhavdip");
-    alert("Mandani");
-  }
+  // name = 'bhavdip';
+  // disable= false;
+
+  // show = "bhavdip";
+
+  color = 'green';
+
 }
