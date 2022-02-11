@@ -1,44 +1,63 @@
-<!--<h1>Login Here.......</h1>-->
+<app-header></app-header>
 
-<!--<input type="text"-->
-<!--       #box-->
-<!--       name="name" />-->
+<h1>{{title}}</h1>
 
-<!--<button (click)="getValue(box.value)"> Click Here</button>-->
+<app-child [item]="data"></app-child>
 
-<!--<p>-->
-<!--  And the value is : {{showValue}}-->
-<!--</p>-->
+<button (click)= "updateChild()">Submit</button>
 
 
-<!--<button (click)="counter('min')">&#45;&#45;</button>-->
-<!--<p>Count : {{count}}</p>-->
-<!--<button (click)="counter('add')">++</button>-->
 
 
-<!--<input type="text" name="user-name" value="{{name}}" disabled ={{disable}}>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">-->
+<!--  <input type="text" ngModel name="name" placeholder="Enter Name" />-->
+<!--  <br />-->
+<!--  <br />-->
+<!--  <input type="text" ngModel name="email" placeholder="Enter Email" />-->
+<!--  <br />-->
+<!--  <br />-->
+<!--  <input type="password" ngModel name="password" placeholder="Enter Password" />-->
+<!--  <br />-->
+<!--  <br />-->
+<!--  <button>Submit</button>-->
+<!--</form>-->
+
+<!--<ul>-->
+<!--  <li>{{userData.name}}</li>-->
+<!--  <li>{{userData.email}}</li>-->
+<!--</ul>-->
+
+
+<!--<input type="text" placeholder="Enter Your Name" #task />-->
 <!--<br />-->
 <!--<br />-->
-<!--<input type="text" name="user-name" [value]="name" [disabled]=disable>-->
+<!--<button (click)="addData(task.value)">Submit</button>-->
 
-
-<!--<h1 *ngIf="show== 'bhavdip'; then ifBlock else elseBlock"></h1>-->
-
-<!--<ng-template #ifBlock>-->
-<!--  <h1>If Condition</h1>-->
-<!--</ng-template>-->
-<!--<ng-template #elseBlock>-->
-<!--    <h1>-->
-<!--      Else Condition-->
-<!--    </h1>-->
-<!--</ng-template>-->
-
-<ng-template [ngIf]="color === 'red'">
-  <h1>Red Color</h1>
-</ng-template>
-<ng-template [ngIf]="color === 'green'">
-  <h1>Green Color</h1>
-</ng-template>
-<ng-template [ngIf]="color === 'blue'">
-  <h1>Blue Color</h1>
-</ng-template>
+<!--<ul *ngFor="let item of list">-->
+<!--  <li>-->
+<!--      {{item.name}}-->
+<!--    <button (click)="removeTask(item.id)">Delete</button>-->
+<!--  </li>-->
+<!--</ul>-->

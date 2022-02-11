@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import  {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -6,22 +7,34 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bhavdip';
-  // showValue='';
-  // getValue(val) {
-  //     this.showValue = val;
-  // }
-  // count = 0;
+  title = 'Angular practice';
+  data = 10;
+
+  updateChild(){
+    this.data = Math.floor(Math.random() * 10)
+  }
+
+  // userData:any = {};
   //
-  // counter(type) {
-  //   type === 'add' ? this.count++ : this.count--;
+  // getData(data:NgForm) {
+  //   console.log(data);
+  //   this.userData = data;
   // }
 
-  // name = 'bhavdip';
-  // disable= false;
-
-  // show = "bhavdip";
-
-  color = 'green';
+  // list:any[] = [];
+  //
+  // addData(item:string) {
+  //
+  //   this.list.push({id:this.list.length , name: item});
+  //   console.log(this.list);
+  // }
+  //
+  // removeTask(id:number) {
+  //   console.warn(id);
+  //
+  //   this.list=this.list.filter(item => item.id !== id)
+  // }
 
 }
+
+
